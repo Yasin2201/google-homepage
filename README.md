@@ -1,0 +1,1 @@
+In this project I will be making a copy of the 'Google-homepage'. the main learning outcomes would be grasping an understanding around what i hvae already learned in HTML and CSS. And also put to use the studies around utilising CSS Grid & FlexBox in order to create the page.
