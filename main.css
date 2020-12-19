@@ -1,0 +1,193 @@
+html {
+   height: 100%;
+   min-height: 100%;
+}
+
+/* top navigation bar */
+#navbar {
+    display: grid;
+    grid-template-columns: 50px 50px 1fr 50px 50px 50px 60px;
+    grid-template-rows: 50px;
+    grid-template-areas: 
+    "about store . gmail images menu signin";
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+#about {
+    grid-area: about;
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 2px;
+}
+#store {
+    grid-area: store;
+    justify-self: center;
+    align-self: center; 
+    margin-bottom: 2px;
+}
+#gmail {
+    grid-area: gmail;
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 2px;
+}
+#images {
+    grid-area: images;
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 2px;
+}
+#menu {
+   grid-area: menu;
+   justify-self: center;
+   align-self: center;
+}
+#signin {
+    grid-area: signin;
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 2px;
+    background-color: #4484ED;
+    border-radius: 2px;
+    padding: 8px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+/* logo and search bar */
+#main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 100px;
+    grid-template-areas: 
+    ". logo ."
+    ". search ."
+}
+
+#logo {
+    grid-area: logo;
+    justify-self: center;
+    align-self: flex-end;
+}
+#search {
+    grid-area: search;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 50px;
+    border: 1px solid #dadada;
+    outline: 0;
+    text-indent: 45px;
+    font-size: 16px;
+    background-image: url(https://icon-library.com/images/facebook-magnifying-glass-icon/facebook-magnifying-glass-icon-9.jpg);
+    background-repeat: no-repeat;
+    background-position-x: 20px;
+    background-position-y: 16px;
+    background-size: 15px;
+
+}
+
+#search:hover {
+    box-shadow: 0 0 5px rgb(218, 218, 218);
+}
+
+#search:focus {
+    box-shadow: 0 0 5px rgb(218, 218, 218);
+}
+
+/* button centering */
+
+#buttons {
+    display: grid;
+    grid-template-columns: 1fr 150px 150px 1fr;
+    grid-template-rows: 35px;
+    grid-template-areas: 
+    ". search-btn ifl-btn .";
+}
+
+#search-btn {
+    grid-area: search-btn;
+    margin-right: 5px;
+    background-color: #F8F9F9;
+    border: none;
+    outline: 0;
+    color: rgb(58, 57, 57);
+    }
+
+#search-btn:hover {
+    box-shadow: 0 0 3px gray;
+}
+
+#ifl-btn {
+    grid-area: ifl-btn;
+    margin-left: 5px;
+    background-color: #F8F9F9;
+    border: none;
+    outline: 0;
+    color: rgb(58, 57, 57);
+}
+
+#ifl-btn:hover {
+    box-shadow: 0 0 3px gray;
+}
+
+/* footer styling */
+#footer {
+    display: grid;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    grid-template-columns: 100px 80px 150px 1fr 80px 80px 80px;
+    grid-template-rows: 40px;
+    grid-template-areas: 
+    "advertising business hsw . privacy terms settings";
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding-right: 10px;
+    background-color: #F2F2F2;
+    border-top: 1px solid #D9DCE0;
+}
+
+#advertising {
+    grid-area: advertising;
+    justify-self: center;
+    align-self: center;
+}
+#business {
+    grid-area: business;
+    justify-self: center;
+    align-self: center;
+}
+#hsw {
+    grid-area: hsw;
+    justify-self: center;
+    align-self: center;
+}
+#privacy {
+    grid-area: privacy;
+    justify-self: center;
+    align-self: center;
+}
+#terms {
+    grid-area: terms;
+    justify-self: center;
+    align-self: center;
+}
+#settings {
+    grid-area: settings;
+    justify-self: center;
+    align-self: center;
+}
+
+/* a href styling */
+
+a {
+    text-decoration: none;
+    color: rgb(58, 57, 57);
+}
+
+a:hover {
+    text-decoration: underline;
+}
